@@ -1,0 +1,656 @@
+*{ 
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    box-sizing: border-box;
+}
+#rodapeflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f5f5f5;
+    height: 47px;
+    padding: 10px 0 13px;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+svg{
+height: 13px;
+width: 14px;
+}
+li{ 
+    list-style: none;
+}
+ul{ 
+    display: flex;
+    flex-direction: row;
+}
+#colorib{ 
+    padding-right: 27.5px;
+    padding-left: 5px;
+    color: #1c1c1c;
+}
+#traco{ 
+    padding-right: 27.5px;
+    color: #00000033;
+}
+#arroba{ 
+    margin-right: 380px;
+    height: 47px;
+    font-size: 14px;
+}
+#free{
+    font-size: 14px
+}
+#icones{ 
+    display: flex;
+    flex-direction: row;
+    width: 585px;
+    height: 47px;
+}
+.facebook{ 
+    padding-right: 20px;
+    color: #00000033;
+}
+.idioma{ 
+    padding-right: 8px;
+    font-size: 14px
+}
+.angle{ 
+    padding-right: 23px;
+}
+.lingua{ 
+    flex-wrap: wrap;
+    padding-right: 8px;
+    position: relative;
+}
+#login{ 
+    padding-left: 8px;
+     font-size: 14px;
+}
+#hide{ 
+    background-color: #1c1c1c;
+    color: white;
+    padding-left: 10px;
+    visibility: hidden;
+}
+.lingua:hover #hide{ 
+    cursor: pointer;
+    visibility: visible;
+    background: #222222;
+    position: absolute;
+    width: 100px;
+    z-index: 9;
+    opacity: 1;
+}
+#ogani{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 47px;
+    width: 100vw;
+    padding: 10px 0 13px;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#imgogani{ 
+    padding-right: 150px;
+}
+#opcoes{ 
+    padding-top: 15px; 
+    padding-right: 150px;
+    display: flex;
+    flex-direction: row;
+}
+.home{ 
+    padding-right: 50px;
+}
+.home:hover{ 
+    color: #7fad39;
+    cursor: pointer;
+}
+#compras{ 
+padding-top: 15px;
+height: 100px;
+}
+.iconescompra{ 
+    padding-right: 20px;;
+}
+#preco{ 
+    font-size: 14px;
+}
+#item{ 
+    color: #00000091;
+}
+#valor{ 
+    font-weight: bold;
+}
+#search{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0 13px;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+   margin-top: 15px;
+}
+#barraverde{ 
+    background-color: #7fad39;
+    width: 240px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#all{ 
+    padding-left: 10px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+#opcoesall{ 
+    height: 470px;
+    width: 100%;
+    border: solid 0.3px rgb(190, 190, 190);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+#flexall{ 
+    display: flex;
+    flex-direction: column;
+}
+.departments{ 
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.num1{ 
+background-color: #7fad39;
+width: 12px;
+height: 12px;
+font-size: 10px;
+line-height: 13px;
+text-align: center;
+display: inline-block;
+border-radius: 50%;
+right: 25px;
+bottom: 15px;
+color: white;
+position: relative;
+}
+.num3{ 
+    background-color: #7fad39;
+    width: 12px;
+height: 12px;
+font-size: 10px;
+line-height: 13px;
+text-align: center;
+display: inline-block;
+border-radius: 50%;
+left: 25px;
+bottom: 15px;
+color: white;
+position: relative;
+}
+#searchrow{ 
+    margin-left: 35px;
+    margin-right: 45px;
+    padding-left: 15px;
+    height: 50px;
+    width: 586px;
+    border: solid 0.3px rgb(190, 190, 190);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#allcategories{ 
+    font-weight: bold;
+    padding-right: 30px;
+}
+#anglesearch{ 
+    padding-left: 13px;
+    padding-right: 13px;
+    color: #00000033;
+}
+#fname{ 
+    display: flex;
+    flex-direction: row;
+    border: none;
+    color: #00000091;
+    width: 291px;
+}
+.btn{ 
+    background-color: #7fad39;
+    border: none;
+    height: 51px;
+    width: 110px;
+    color: white;
+    font-weight: bold;
+}
+#phone{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 25px;
+}
+#telefone{ 
+    display: flex;
+    flex-direction: column;
+}
+#numtelefone{ 
+    font-weight: bold;
+    font-size: 18px;
+}
+#suport{ 
+    font-size: 14px;
+    color: #6f6f6f;
+}
+#flexshop{ 
+    display: flex;
+    flex-direction: column;
+}
+#shopnow{ 
+    margin-left: 40px;
+    margin-top: 15px;
+    height: 450px;
+    background-image: url(banner.jpg);
+}
+#flexshoprow{ 
+    display: flex;
+    flex-direction: row;
+}
+#fruitfresh{ 
+    padding-top: 70px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+}
+#textf{ 
+    font-size: 12px;
+    color: #7fad39;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+#textv{
+    font-size: 46px;
+    color: #252525;
+    line-height: 52px;
+    font-weight: 700;
+}
+#textfree{ 
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 26px;
+}
+.btn2{ 
+    background-color: #7fad39;
+    border: none;
+    height: 40px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+}
+#flexprimeirogrid{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#primeirogrid{ 
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    grid-template-columns:  10px 250px 250px 250px 250px 1px;
+    gap: 40px;
+}
+#box1{ 
+    background-image: url(cat-1.jpg);
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 15px;
+   
+}
+#box2{ 
+    background-image: url(cat-2.jpg);
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 15px;
+   
+}
+#box3{ 
+    background-image: url(cat-3.jpg);
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 15px;
+   
+}
+#box4{ 
+    background-image: url(cat-4.jpg);
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 15px;
+   
+}
+.fresh{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.seta1{ 
+    border: 1px solid #ebebeb;
+    height: 55px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#FeaturedProduct{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+#fptext{ 
+    font-size: 43px;
+}
+#barraverde2{
+    margin-bottom: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    width: 80px;
+    background: #7fad39;
+    margin: 0 auto;
+}
+.fpopcoes{
+    padding-right: 30px;
+    cursor: pointer;
+}
+#fptb{
+    position: relative;
+    margin-bottom: 30px;
+}
+#flexfpall{
+    display: flex;
+    flex-direction: row;
+}
+#barraverde3{ 
+    margin-bottom: 50px;
+    position: absolute;
+    
+    height: 2px;
+    width: 16px;
+    background: #7fad39;
+    
+}
+#segundogrid{
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    grid-template-columns:  6fr 3fr 3fr 3fr 3fr 6fr;
+    column-gap: 40px;
+    grid-template-rows: 270px 50px 270px 50px;
+    row-gap: 20px;
+}
+.sbox1{ 
+    height: 270px;
+    background-image: url(feature-1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+#flexsegundogrid{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#flexsbox1{ 
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 110%;
+    transition: 0.5s;
+}
+
+.sbox1:hover #flexsbox1 { top: 75%;}
+.iconessbox1{ 
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    fill: black;
+    transition: .3s ;
+    opacity: 1;
+}
+.iconessbox1:hover{ 
+    background-color: #7fad39;
+    cursor: pointer;
+    fill: white;
+    rotate: 360deg;
+}
+#sboxlegenda{ 
+    
+   
+    font-size: 16px;
+    text-align: center;
+
+}
+#precosbox{ 
+    font-size: 18px;
+    
+    font-weight: bold;
+}
+.sbox2{ 
+    height: 270px;
+    background-image: url(feature-2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.sbox2:hover #flexsbox1 { top: 75%;}
+.sbox3{ 
+    height: 270px;
+    background-image: url(feature-3.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.sbox3:hover #flexsbox1 { top: 75%;}
+.sbox4{ 
+    height: 270px;
+    background-image: url(feature-4.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.sbox4:hover #flexsbox1 { top: 75%;}
+.sbox5{ 
+    height: 270px;
+    background-image: url(feature-5.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.sbox5:hover #flexsbox1 { top: 75%;}
+.sbox6{ 
+    height: 270px;
+    background-image: url(feature-6.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.sbox6:hover #flexsbox1 { top: 75%;}
+.sbox7{ 
+    height: 270px;
+    background-image: url(feature-7.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.sbox7:hover #flexsbox1 { top: 75%;}
+.sbox8{ 
+    height: 270px;
+    background-image: url(feature-8.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.sbox8:hover #flexsbox1 { top: 75%;}
+#terceirogrid{ 
+    display: grid;
+    grid-template-columns: 7.5fr 3fr 3fr 3fr 3fr 7.5fr;
+    grid-template-rows: 270px;
+    margin-top: 50px;
+    margin-right: 375px;
+    margin-left: 375px;
+    column-gap: 40;
+}
+#quartogrid{ 
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    margin-right: 380px;
+    margin-left: 550px;
+    margin-top: 100px;
+    row-gap: 30px;
+}
+#Latest{ 
+    font-size: 24px;
+    color: #1c1c1c;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+}
+.setaqg {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    background: #F3F6FA;
+    border: 1px solid #e6e6e6;
+    font-size: 14px;
+    color: #636363;
+    margin-right: 7px;
+    line-height: 30px;
+    text-align: center;
+}
+#setas1-2qg {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    margin-left: 100px;
+}
+#carroselproducts{ 
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+#margincp{ 
+    padding-left: 20px;
+}
+#quintogrid{ 
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 250px 250px;
+    margin-right: 450px;
+    margin-left: 400px;
+    margin-top: 100px;
+    row-gap: 30px;
+    column-gap: 80px;
+}
+#may{ 
+    color: #b2b2b2;
+    padding-right: 40px;
+}
+#cooking{
+    font-size: 20px;
+    font-weight: bold;
+}
+#sed{ 
+    font-size: 16px;
+    color: #6f6f6f;
+}
+#pageshover{ 
+    position: relative;
+}
+#pageshide{ 
+    background-color: #1c1c1c;
+    color: white;
+    padding-left: 10px;
+    visibility: hidden;
+}
+#pageshover:hover #pageshide{ 
+    cursor: pointer;
+    visibility: visible;
+    background: #222222;
+    position: absolute;
+    width: 170px;
+    z-index: 9;
+    opacity: 1;
+}
+.pagesophover{ 
+    padding-bottom: 5px;
+}
+.pagesophover:hover {
+    color: #7fad39;
+}
