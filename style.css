@@ -109,6 +109,10 @@ ul{
 }
 .home{ 
     padding-right: 50px;
+    color: black;
+}
+.pagesmudar {
+    text-decoration: none;
 }
 .home:hover{ 
     color: #7fad39;
@@ -148,6 +152,18 @@ height: 100px;
     justify-content: center;
     align-items: center;
     color: white;
+    position: relative;
+}
+#checkbox{ 
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    height: 50px;
+    width: 240px;
+}
+#checkbox:checked~#opcoesall{ 
+    visibility: visible;
+    max-height: 550px;
 }
 #all{ 
     padding-left: 10px;
@@ -155,12 +171,18 @@ height: 100px;
     font-weight: bold;
 }
 #opcoesall{ 
+    color: black;
+    top: 50px;
     height: 470px;
     width: 100%;
     border: solid 0.3px rgb(190, 190, 190);
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.8s ease-in-out;
+    overflow: hidden;
+    max-height: 20px;
 }
 #flexall{ 
     display: flex;
@@ -224,7 +246,7 @@ position: relative;
     flex-direction: row;
     border: none;
     color: #00000091;
-    width: 291px;
+    width: 290px;
 }
 .btn{ 
     background-color: #7fad39;
@@ -417,7 +439,7 @@ position: relative;
     margin-top: 50px;
     display: grid;
     align-items: center;
-    grid-template-columns:  6fr 3fr 3fr 3fr 3fr 6fr;
+    grid-template-columns:  6fr 4fr 4fr 4fr 4fr 6fr;
     column-gap: 40px;
     grid-template-rows: 270px 50px 270px 50px;
     row-gap: 20px;
@@ -568,11 +590,12 @@ position: relative;
 }
 #quartogrid{ 
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: 4fr 4fr 4fr;
     grid-template-rows: 100px 100px 100px 100px;
     margin-right: 380px;
-    margin-left: 550px;
+    margin-left: 400px;
     margin-top: 100px;
+    column-gap: 40px;
     row-gap: 30px;
 }
 #Latest{ 
@@ -598,7 +621,7 @@ position: relative;
     display: flex;
     flex-direction: row;
     margin-top: 8px;
-    margin-left: 100px;
+    margin-left: 60px;
 }
 #carroselproducts{ 
     display: flex;
@@ -612,11 +635,11 @@ position: relative;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 250px 250px;
-    margin-right: 450px;
+    margin-right: 350px;
     margin-left: 400px;
     margin-top: 100px;
-    row-gap: 30px;
-    column-gap: 80px;
+    row-gap: 20px;
+    column-gap: 60px;
 }
 #may{ 
     color: #b2b2b2;
@@ -654,3 +677,128 @@ position: relative;
 .pagesophover:hover {
     color: #7fad39;
 }
+.rodape {
+    width: 100%;
+    height: 353px;
+    background: #f3f6fa;
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
+  #bodyrodape {
+    display: flex;
+  }
+  #container1 {
+    margin-left: 400px;
+    line-height: 40px;
+    margin-right: 100px;
+  }
+  .boldrodape {
+    font-weight: 700;
+    margin-left: 40px;
+    font-size: 18px;
+  }
+  .boldrodape2 {
+    font-weight: 700;
+  
+    font-size: 18px;
+  }
+  #ulcontainer {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #1c1c1c;
+    padding-right: 20px;
+  }
+  #ulcontainer2 {
+    float: left;
+    display: block;
+    line-height: 35px;
+    margin-right: 140px;
+    font-size: 14px;
+    color: #1c1c1c;
+  }
+  #buscarrodape {
+    width: 250px;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #1c1c1c;
+    height: 46px;
+    border: 1px solid #ededed;
+    margin-top: 30px;
+  }
+  #subscribebtn {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 800;
+    width: 135px;
+    height: 50px;
+    margin-left: -5px;
+    text-transform: uppercase;
+    background: #7fad39;
+    border: none;
+  }
+  .bolarodape {
+    display: inline-block;
+    height: 41px;
+    width: 41px;
+    font-size: 16px;
+    color: #404040;
+    border: 1px solid #ededed;
+    border-radius: 50%;
+    line-height: 38px;
+    text-align: center;
+    background: #ffffff;
+    -webkit-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -ms-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+    margin-right: 10px;
+  }
+  #facerodapesvg {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+  }
+  #instarodapesvg {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+  }
+  #twtrodapesvg {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+  }
+  #redessociaisrodape {
+    margin-top: 25px;
+  }
+  #linhacinza {
+    border-top: 1px solid #ebebeb;
+    padding: 15px 0;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 1220px;
+    margin-left: 400px;
+  }
+  #txtazulzinho {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  #rodapebaixo {
+    display: flex;
+  }
+  #txtrodape {
+    font-size: 16px;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 400px;
+    margin-right: 360px;
+  }
